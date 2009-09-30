@@ -1,4 +1,4 @@
-require 'lib/tea-rack/version'
+require 'lib/rack-pot/version'
 
 Gem::Specification.new do |s|
   s.name             = "rack-pot"
@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.platform         = Gem::Platform::RUBY
   s.has_rdoc         = true
   s.extra_rdoc_files = ["README.rdoc", "History.rdoc", "TODO", "LICENSE"]
-  s.summary          = "????"
+  s.summary          = "Rack middleware that complies with Hyper Text Coffee Pot Control Protocol (HTCPCP) 1.0"
   s.description      = s.summary
   s.author           = "Simon Harris"
   s.email            = "haruki.zaemon@gmail.com"

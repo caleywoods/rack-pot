@@ -12,7 +12,7 @@ module Rack
 
     def call(env)
       if env["CONTENT_TYPE"] == CONTENT_TYPE
-        [418, {"Content-Type" => CONTENT_TYPE}, []]
+        ["418 I'm a teapot", {"Content-Type" => CONTENT_TYPE, "Content-Length" => "0"}, []]
       else
         @app.call(env)
       end
